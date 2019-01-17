@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OnThi" Class="QLBaoDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-6E002F7\SQLEXPRESS;Initial Catalog=OnThi;Integrated Security=True" SettingsObjectName="QLBao.Properties.Settings" SettingsPropertyName="OnThiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LoaiBao" Member="LoaiBaos">
+    <Type Name="LoaiBao">
+      <Column Name="MaLoai" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoaiBao_Bao" Member="Baos" ThisKey="MaLoai" OtherKey="MaLoai" Type="Bao" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bao" Member="Baos">
+    <Type Name="Bao">
+      <Column Name="MaBao" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenBao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuongBaoTrongQuy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoaiBao_Bao" Member="LoaiBao" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiBao" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

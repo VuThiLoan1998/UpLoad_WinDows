@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLBaoDB">
+  <DataContextMoniker Name="/QLBaoDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7a72e59d-0aff-4027-a141-a7492262b8e0" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/QLBaoDBDataContext/LoaiBao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="045a7549-4ece-415e-abec-644de45225d8" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09390190-bea3-4976-8391-9b56bac49a15" absoluteBounds="3.5, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/QLBaoDBDataContext/Bao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8fa0277-3e13-445f-9994-e0bab56e8ed5" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLBaoDBDataContext/LoaiBao/LoaiBao_Bao" />
+      <nodes>
+        <classShapeMoniker Id="7a72e59d-0aff-4027-a141-a7492262b8e0" />
+        <classShapeMoniker Id="09390190-bea3-4976-8391-9b56bac49a15" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
